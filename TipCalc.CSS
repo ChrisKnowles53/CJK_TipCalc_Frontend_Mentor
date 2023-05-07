@@ -1,0 +1,40 @@
+
+:root {
+--StrongCyan-color: hsl(172, 67%, 45%);
+--VeryDarkCyan-color: hsl(183, 100%, 15%);
+--DarkGrayishCyan-color: hsl(186, 14%, 43%);
+--GrayishCyan-color: hsl(184, 14%, 56%);
+--LightGrayishCyan-color: hsl(185, 41%, 84%);
+--VeryLightGrayishCyan: hsl(189, 41%, 97%);
+--White-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+ background-color: var(--LightGrayishCyan-color);
+}
+
+.bill-container {
+ background-color: hsl(183, 100%, 15%);
+}
+
+.tip-container {
+ background-color: var(--White-color);
+ border: 2px solid red;
+
+}
+
+.people-container {
+ background-color: var(--White-color);
+ border: 2px solid blue;
+}
+
+.summary-container {
+ background-color: var(--VeryDarkCyan-color);
+}
+
+button {
+ background-color: var(--VeryDarkCyan-color);
+}
+button:hover {
+ background-color: var(--StrongCyan-color);
+}
