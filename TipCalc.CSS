@@ -11,6 +11,13 @@
 --veryDarkGrayishCyan: hsl(187, 12%, 15%);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+
 h1 {
  background-color: var(--LightGrayishCyan);
 }
@@ -31,10 +38,16 @@ h1 {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
+ align-items: center;
  background-color: var(--StrongCyan);
- padding: 2%;
+ padding: 1%;
  border-radius: 5px;
+ 
 }
+.dollar-input img {
+ width: auto;
+ height: 15px;
+ }
 
 .amount {
  background-color: transparent;
@@ -44,14 +57,33 @@ h1 {
  min-width: 10px;
  align-self: flex-end;
  text-align: right;
+ font-size: 24px;
 
 }
 
 .tip-container {
  background-color: var(--White);
  border: 2px solid red;
+ display: flex;
+ flex-direction: column;
+}
+.tip-percentages {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+ padding: 1%;
+ border-radius: 5px;
 }
 
+button {
+ background-color: var(--VeryDarkCyan);
+ color: var(--White);
+ border-radius: 5px;
+ width: 90px;
+ font-size: 20px;
+}
 
 .people-container {
  background-color: var(--White);
@@ -63,11 +95,6 @@ h1 {
  border-radius: 20px;
 }
 
-button {
- background-color: var(--VeryDarkCyan);
- color: var(--White);
- border-radius: 5px;
-}
 
 button:hover {
  background-color: var(--StrongCyan);
@@ -75,8 +102,12 @@ button:hover {
 }
 input {
  background-color: var(--LightGrayishCyan);
- color: ar(--veryDarkGrayishCyan);
+ color: var(--veryDarkGrayishCyan);
  border-radius: 5px;
+ font-size: 20px;
+ font-weight: bold;
+ width: 90px;
+ text-align: center;
 }
 
 .reset-button {
