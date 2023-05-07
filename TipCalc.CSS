@@ -1,40 +1,87 @@
 
 :root {
---StrongCyan-color: hsl(172, 67%, 45%);
---VeryDarkCyan-color: hsl(183, 100%, 15%);
---DarkGrayishCyan-color: hsl(186, 14%, 43%);
---GrayishCyan-color: hsl(184, 14%, 56%);
---LightGrayishCyan-color: hsl(185, 41%, 84%);
+--StrongCyan: hsl(172, 67%, 45%);
+--VeryDarkCyan: hsl(183, 100%, 15%);
+--DarkGrayishCyan: hsl(186, 14%, 43%);
+--GrayishCyan: hsl(184, 14%, 56%);
+--LightGrayishCyan: hsl(185, 41%, 84%);
 --VeryLightGrayishCyan: hsl(189, 41%, 97%);
---White-color: hsl(0, 0%, 100%);
+--White: hsl(0, 0%, 100%);
+
+--veryDarkGrayishCyan: hsl(187, 12%, 15%);
 }
 
 h1 {
- background-color: var(--LightGrayishCyan-color);
+ background-color: var(--LightGrayishCyan);
+}
+
+.main-container {
+ border: 2px solid orange;
+ display: flex;
+ flex-direction: column;
 }
 
 .bill-container {
- background-color: hsl(183, 100%, 15%);
+ border: 2px solid green;
+ display: flex;
+ flex-direction: column
+}
+
+.dollar-input {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ background-color: var(--StrongCyan);
+ padding: 2%;
+ border-radius: 5px;
+}
+
+.amount {
+ background-color: transparent;
+ border: none;
+ font-weight: bold;
+ width: auto;
+ min-width: 10px;
+ align-self: flex-end;
+ text-align: right;
+
 }
 
 .tip-container {
- background-color: var(--White-color);
+ background-color: var(--White);
  border: 2px solid red;
-
 }
 
+
 .people-container {
- background-color: var(--White-color);
+ background-color: var(--White);
  border: 2px solid blue;
 }
 
 .summary-container {
- background-color: var(--VeryDarkCyan-color);
+ background-color: var(--VeryDarkCyan);
+ border-radius: 20px;
 }
 
 button {
- background-color: var(--VeryDarkCyan-color);
+ background-color: var(--VeryDarkCyan);
+ color: var(--White);
+ border-radius: 5px;
 }
+
 button:hover {
- background-color: var(--StrongCyan-color);
+ background-color: var(--StrongCyan);
+ color: var(--veryDarkGrayishCyan);
+}
+input {
+ background-color: var(--LightGrayishCyan);
+ color: ar(--veryDarkGrayishCyan);
+ border-radius: 5px;
+}
+
+.reset-button {
+ background-color: var(--StrongCyan);
+ color: var(--veryDarkGrayishCyan);
+ border-radius: 5px;
+ 
 }

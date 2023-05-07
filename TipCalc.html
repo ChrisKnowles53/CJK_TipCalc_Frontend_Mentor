@@ -18,40 +18,48 @@
 <body>
   <h1>SPLITTER</h1>
 
-  <div class="bill-container">
-    <p>Bill</p>
-    <img src="" alt="image of dollar sign">
-    <input type="text" placeholder="142.55">
-  </div>
+  <div class="main-container">
+    <div class="bill-container">
+      <p>Bill</p>
+      <div class="dollar-input">
+        <img src="./images/icon-dollar.svg" alt="image of dollar sign">
+        <input class="amount" type="text" placeholder="142.55">
+      </div>
+    </div>
 
-  <div class="tip-container">
-    <p>Select Tip %</p>
-    <div class="tip-percentages">
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
-      <input type="text" placeholder="Custom">
-    </div>  
-  </div>
+    <div class="tip-container">
+      <p>Select Tip %</p>
+      <div class="tip-percentages">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input type="text" placeholder="Custom">
+      </div>  
+    </div>
 
-  <div class="people-container">
+    <div class="bill-container">
       <p>Number of People</p>
-      <img src="" alt="image of people">
-      <input type="text" placeholder="5">
+      <div class="dollar-input">
+        <img src="./images/icon-person.svg" alt="image of people">
+        <input class="amount" type="text" placeholder="5">
+      </div>
+    </div>
   </div>
-  
+
   <div class="summary-container">
     <div class="tip-amount">
+      <img src="./images/icon-dollar.svg" alt="image of dollar sign">
       <p>Tip Amount</p>
       <p>/ person</p>
     </div>
     <div class="total">
+      <img src="./images/icon-dollar.svg" alt="image of dollar sign">
       <p>Total</p>
       <p>/ person</p>
     </div>
-    <button>Reset</button>
+    <button class="reset-button">Reset</button>
   </div>
   
   <div class="attribution">
