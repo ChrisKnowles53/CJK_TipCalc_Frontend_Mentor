@@ -45,28 +45,42 @@
       <p>Number of People</p>
       <div class="dollar-input">
         <img src="./images/icon-person.svg" alt="image of people">
-        <input class="amount" type="text" placeholder="5">
+        <input class="number-of-people" type="text" placeholder="5">
       </div>
     </div>
   </div>
 
   <div class="summary-container">
-    <div class="tip-amount">
-      <img src="./images/icon-dollar.svg" alt="image of dollar sign">
-      <p>Tip Amount</p>
-      <p>/ person</p>
+
+    <div class="tip-per-person">
+      <div class="tip-amount">
+        <p class="summary-heading">Tip Amount</p>
+        <p class="summary-subtext">/ person</p>
+      </div>
+      <div class="calculated">
+        <img src="./images/icon-dollar.svg" alt="image of dollar sign">
+        <p class="tip-per-person">0.00</p>
+      </div>
     </div>
-    <div class="total">
-      <img src="./images/icon-dollar.svg" alt="image of dollar sign">
-      <p>Total</p>
-      <p>/ person</p>
+             
+    <div class="tip-per-person">
+      <div class="tip-amount">
+        <p class="summary-heading">Total</p>
+        <p class="summary-subtext">/ person</p>
+      </div>
+      <div class="calculated">
+        <img src="./images/icon-dollar.svg" alt="image of dollar sign">
+        <p class="total-per-person">0.00</p>
+      </div>
     </div>
-    <button class="reset-button">Reset</button>
+    
+    <button class="reset-button">RESET</button>
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Chris Knowles</a>.
   </div>
+  <script src="TipCalc.js"></script>
 </body>
 </html>
