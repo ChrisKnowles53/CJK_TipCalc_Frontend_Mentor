@@ -15,23 +15,29 @@
 
 body {
   font-family: 'Space Mono', monospace;
+  background-color: var(--LightGrayishCyan);
 }
 
+.header {
+ text-align: center;
+ width: 75px;
+ word-wrap: break-word;
+ padding: 0 auto;
 
-h1 {
- background-color: var(--LightGrayishCyan);
 }
 
 .main-container {
- border: 2px solid orange;
  display: flex;
  flex-direction: column;
+ border-radius: 20px;
+ 
 }
 
 .bill-container {
- border: 2px solid green;
+ background-color: var(--White);
  display: flex;
- flex-direction: column
+ flex-direction: column;
+ padding: 5%;
 }
 
 .dollar-input {
@@ -40,7 +46,10 @@ h1 {
  justify-content: space-between;
  align-items: center;
  background-color: var(--StrongCyan);
- padding: 1%;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ padding-left: 3%;
+ padding-right: 3%;
  border-radius: 5px;
  
 }
@@ -63,51 +72,48 @@ h1 {
 
 .tip-container {
  background-color: var(--White);
- border: 2px solid red;
  display: flex;
  flex-direction: column;
+ padding: 5%;
 }
 .tip-percentages {
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-around;
- align-items: center;
- padding: 1%;
- border-radius: 5px;
+ align-items: space-between;
+ row-gap: 10px;
 }
 
 button {
  background-color: var(--VeryDarkCyan);
  color: var(--White);
- border-radius: 5px;
- width: 90px;
- font-size: 20px;
 }
-
-.people-container {
- background-color: var(--White);
- border: 2px solid blue;
-}
-
-.summary-container {
- background-color: var(--VeryDarkCyan);
- border-radius: 20px;
-}
-
 
 button:hover {
  background-color: var(--StrongCyan);
  color: var(--veryDarkGrayishCyan);
 }
+
 input {
  background-color: var(--LightGrayishCyan);
  color: var(--veryDarkGrayishCyan);
+}
+.input, .button {
  border-radius: 5px;
- font-size: 20px;
+ width: 130px;
+ height: 42px;
+ font-size: 24px;
  font-weight: bold;
- width: 90px;
  text-align: center;
+ padding: none;
+ border-style: none;
+}
+
+
+.summary-container {
+ background-color: var(--VeryDarkCyan);
+ border-radius: 20px;
 }
 
 .reset-button {
