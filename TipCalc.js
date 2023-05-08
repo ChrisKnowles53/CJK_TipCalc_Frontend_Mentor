@@ -26,18 +26,18 @@ function calculateTotalPerPerson() {
   // Update the text of the total per person element
   totalPerPersonElement.textContent = totalPerPerson;
 
-  calculateTipPerPerson();
 }
 
 
 
 // Add event listeners to the tip buttons to recalculate the tip per person whenever a button is clicked
 tipButtons.forEach((button) => {
- button.addEventListener("click", calculateTipPerPerson);
+ button.addEventListener("click", () => {
+    calculateTipPerPerson(button.textContent);
+ });
 });
 
-// Function to calculate the tip per person
-function calculateTipPerPerson() {
+function calculateTipPerPerson(tipButtonValue) {
   // Get the value of the amount input and convert it to a number
   const amount = parseFloat(amountInput.value);
 
@@ -45,21 +45,17 @@ function calculateTipPerPerson() {
   const numberOfPeople = parseFloat(numberOfPeopleInput.value);
 
   // Get the selected tip percentage
-  let tipPercentage;
-  tipButtons.forEach((button) => {
-    if (button.classList.contains("selected")) {
-      tipPercentage = parseFloat(button.textContent) / 100;
-    }
-  });
+  let tipPercentage = parseFloat(tipButtonValue) / 100;
 
-  // Get the custom tip percentage, if it exists
-  if (customTipInput.value) {
-    tipPercentage = parseFloat(customTipInput.value) / 100;
-  }
-
+  
   // Calculate the tip amount per person and round it to two decimal places
   const tipAmount = ((amount * tipPercentage) / numberOfPeople).toFixed(2);
-
+  
   // Update the text of the tip per person element
   tipPersonElement.textContent = tipAmount;
-}
+ }
+ 
+ // // Get the custom tip percentage, if it exists
+ // if (customTipInput.value) {
+ //   tipPercentage = parseFloat(customTipInput.value) / 100;
+ // }
