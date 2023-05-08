@@ -55,7 +55,8 @@ function calculateTipPerPerson(tipButtonValue) {
   tipPersonElement.textContent = tipAmount;
  }
  
- // // Get the custom tip percentage, if it exists
- // if (customTipInput.value) {
- //   tipPercentage = parseFloat(customTipInput.value) / 100;
- // }
+// Add an event listener to the custom tip input to recalculate the tip per person whenever the input changes
+customTipInput.addEventListener("input", () => {
+ calculateTipPerPerson(customTipInput.value);
+}
+);
