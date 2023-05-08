@@ -31,8 +31,10 @@ body {
 .main-container {
  display: flex;
  flex-direction: column;
- border-radius: 20px;
- 
+ background-color: var(--White);
+ border-radius: 20px 20px 0px 0px;
+ margin: 10px;
+ padding: 20px;
 }
 
 .bill-container {
@@ -40,6 +42,7 @@ body {
  display: flex;
  flex-direction: column;
  padding: 5%;
+ border-radius: 20px;
 }
 
 .dollar-input {
@@ -104,7 +107,7 @@ input {
 }
 .input, .button {
  border-radius: 5px;
- width: 130px;
+ width: 120px;
  height: 42px;
  font-size: 24px;
  font-weight: bold;
