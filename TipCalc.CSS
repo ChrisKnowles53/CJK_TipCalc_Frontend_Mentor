@@ -22,7 +22,7 @@ body {
  text-align: center;
  width: 75px;
  word-wrap: break-word;
- padding: 0 auto;
+ margin: 0 auto;
  margin-top: 45px;
  margin-bottom: 25px;
 
@@ -119,14 +119,12 @@ input {
 .summary-container {
  display: flex;
  flex-direction: column;
- justify-content: center;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: space-between;
-
+ justify-content: space-between;
+ align-items: center;
+ padding: 25px;
  background-color: var(--VeryDarkCyan);
  border-radius: 20px;
+ gap: 20px;
 }
 
 .tip-per-person {
@@ -134,7 +132,7 @@ input {
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- padding: 0 5%;
+ width: 100%;
  color: var(--White);
 }
 
@@ -147,7 +145,6 @@ p {
 }
 
 .summary-subtext {
- 
  flex-direction: row;
  align-items: center;
  padding: 2%;
@@ -159,7 +156,6 @@ p {
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- padding: 5%;
  color: var(--StrongCyan);
  font-weight: bold;
  font-size: 35px;
@@ -169,7 +165,7 @@ p {
  background-color: var(--StrongCyan);
  color: var(--DarkGrayishCyan);
  border-radius: 5px;
- width: 90%;
+ width: 100%;
  height: 42px;
  font-size: 20px;
  font-weight: bold;
@@ -179,7 +175,6 @@ p {
  justify-content: center;
  align-items: center;
  margin-top: 20px;
- margin-bottom: 20px;
- 
 }
 
+/* when using @media the class being used on will inherit the attributes assigned in the class */

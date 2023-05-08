@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="TipCalc.css" />
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <h1>SPLITTER</h1>
-  </div>
+    <title>Frontend Mentor | Tip calculator app</title>
 
-  <div class="main-container">
-    <div class="bill-container">
-      <p>Bill</p>
-      <div class="dollar-input">
-        <img src="./images/icon-dollar.svg" alt="image of dollar sign">
-        <input class="amount" type="number" placeholder="142.55" min="1">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="TipCalc.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>SPLITTER</h1>
+    </div>
+
+    <div class="main-container">
+      <div class="bill-container">
+        <p>Bill</p>
+        <div class="dollar-input">
+          <img src="./images/icon-dollar.svg" alt="image of dollar sign" />
+          <input class="amount" type="number" placeholder="142.55" min="1" />
+        </div>
+      </div>
+
+      <div class="tip-container">
+        <p>Select Tip %</p>
+        <div class="tip-percentages">
+          <button class="button">5%</button>
+          <button class="button">10%</button>
+          <button class="button">15%</button>
+          <button class="button">25%</button>
+          <button class="button">50%</button>
+          <input class="input" type="number" placeholder="Custom" min="1" />
+        </div>
+      </div>
+
+      <div class="bill-container">
+        <p>Number of People</p>
+        <div class="dollar-input">
+          <img src="./images/icon-person.svg" alt="image of people" />
+          <input
+            class="number-of-people"
+            type="number"
+            placeholder="5"
+            min="1"
+            value="1"
+          />
+        </div>
+      </div>
+
+      <div class="summary-container">
+        <div class="tip-per-person">
+          <div class="tip-amount">
+            <p class="summary-heading">Tip Amount</p>
+            <p class="summary-subtext">/ person</p>
+          </div>
+          <div class="calculated">
+            <img src="./images/icon-dollar.svg" alt="image of dollar sign" />
+            <p class="tip-person">0.00</p>
+          </div>
+        </div>
+
+        <div class="tip-per-person">
+          <div class="tip-amount">
+            <p class="summary-heading">Total</p>
+            <p class="summary-subtext">/ person</p>
+          </div>
+          <div class="calculated">
+            <img src="./images/icon-dollar.svg" alt="image of dollar sign" />
+            <p class="total-per-person">0.00</p>
+          </div>
+        </div>
+
+        <button class="reset-button">RESET</button>
       </div>
     </div>
 
-    <div class="tip-container">
-      <p>Select Tip %</p>
-      <div class="tip-percentages">
-        <button class="button">5%</button>
-        <button class="button">10%</button>
-        <button class="button">15%</button>
-        <button class="button">25%</button>
-        <button class="button">50%</button>
-        <input  class="input" type="number" placeholder="Custom" min="1" >
-      </div>  
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chris Knowles</a>.
     </div>
-
-    <div class="bill-container">
-      <p>Number of People</p>
-      <div class="dollar-input">
-        <img src="./images/icon-person.svg" alt="image of people">
-        <input class="number-of-people" type="number" placeholder="5" min="1" value="1">
-      </div>
-    </div>
-
-    <div class="summary-container">
-
-      <div class="tip-per-person">
-        <div class="tip-amount">
-          <p class="summary-heading">Tip Amount</p>
-          <p class="summary-subtext">/ person</p>
-        </div>
-        <div class="calculated">
-          <img src="./images/icon-dollar.svg" alt="image of dollar sign">
-          <p class="tip-person">0.00</p>
-        </div>
-      </div>
-      
-      <div class="tip-per-person">
-        <div class="tip-amount">
-          <p class="summary-heading">Total</p>
-          <p class="summary-subtext">/ person</p>
-        </div>
-        <div class="calculated">
-          <img src="./images/icon-dollar.svg" alt="image of dollar sign">
-          <p class="total-per-person">0.00</p>
-        </div>
-      </div>
-      
-      <button class="reset-button">RESET</button>
-    </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Chris Knowles</a>.
-  </div>
-  <script src="TipCalc.js"></script>
-</body>
+    <script src="TipCalc.js"></script>
+  </body>
 </html>
