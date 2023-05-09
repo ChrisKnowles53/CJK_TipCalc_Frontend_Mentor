@@ -41,6 +41,7 @@ body {
  background-color: var(--White);
  display: flex;
  flex-direction: column;
+ /* align-content: space-around; */
 
 }
 
@@ -50,10 +51,10 @@ background-color: var(--VeryLightGrayishCyan);
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- padding-top: 1%;
+ /* padding-top: 1%;
  padding-bottom: 1%;
  padding-left: 3%;
- padding-right: 3%;
+ padding-right: 3%; */
  border-radius: 5px;
  
 }
