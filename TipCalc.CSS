@@ -37,20 +37,19 @@ body {
  padding: 20px;
 }
 
-.bill-container {
+.title-icon-input-container {
  background-color: var(--White);
  display: flex;
  flex-direction: column;
- padding: 5%;
- border-radius: 20px;
+
 }
 
-.dollar-input {
+.icon-input {
+background-color: var(--VeryLightGrayishCyan);
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- background-color: var(--VeryLightGrayishCyan);
  padding-top: 1%;
  padding-bottom: 1%;
  padding-left: 3%;
@@ -127,7 +126,7 @@ input {
  gap: 20px;
 }
 
-.tip-per-person {
+.summary-text {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
@@ -151,7 +150,7 @@ p {
  color: var(--GrayishCyan);
 }
 
-.calculated {
+.calculated-figure {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
