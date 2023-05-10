@@ -25,24 +25,27 @@ body {
  margin: 0 auto;
  margin-top: 45px;
  margin-bottom: 25px;
-
 }
 
 .main-container {
  display: flex;
  flex-direction: column;
+ justify-content: space-between;
  background-color: var(--White);
  border-radius: 20px 20px 0px 0px;
  margin: 10px;
  padding: 20px;
+ gap: 20px;
+  
+
 }
 
 .title-icon-input-container {
  background-color: var(--White);
  display: flex;
  flex-direction: column;
+ gap: 5px;
  /* align-content: space-around; */
-
 }
 
 .icon-input {
@@ -51,12 +54,11 @@ background-color: var(--VeryLightGrayishCyan);
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- /* padding-top: 1%;
+ /* The below is specifically locating the $ and text where i want it */
+ padding-top: 1%;
  padding-bottom: 1%;
  padding-left: 3%;
- padding-right: 3%; */
- border-radius: 5px;
- 
+ padding-right: 3%; 
 }
 .dollar-input img {
  width: auto;
@@ -72,23 +74,22 @@ background-color: var(--VeryLightGrayishCyan);
  align-self: flex-end;
  text-align: right;
  font-size: 24px;
-
 }
 
 .tip-container {
  background-color: var(--White);
  display: flex;
  flex-direction: column;
- padding: 5%;
+ border: 2px solid red;
 }
 
 .tip-percentages {
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: space-between;
- row-gap: 10px;
+ gap: 10px;
 }
 
 button {
@@ -107,12 +108,12 @@ input {
 }
 .input, .button {
  border-radius: 5px;
- width: 120px;
+ width: 140px;
  height: 42px;
  font-size: 24px;
  font-weight: bold;
  text-align: center;
- padding: none;
+ padding: 0px;
  border-style: none;
 }
 
