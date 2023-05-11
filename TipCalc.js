@@ -15,11 +15,14 @@ numberOfPeopleInput.addEventListener("input", calculateTotalPerPerson);
 tipButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculateTipPerPerson(button.textContent);
+    removeActiveClass();
+    nutton.classList.add("active");
   });
 });
 
 customTipInput.addEventListener("input", () => {
   calculateTipPerPerson(customTipInput.value);
+  removeActiveClass();
 });
 
 // Function to calculate the total per person
@@ -52,11 +55,14 @@ function resetCalculator() {
   amountInput.value = "";
   numberOfPeopleInput.value = 1;
   customTipInput.value = "";
-  // Reset tip buttons
-  tipButtons.forEach((button) => {
-    button.classList.remove("active");
-  });
+  removeActiveClass();
 
   totalPerPersonElement.textContent = "0.00";
   tipPersonElement.textContent = "0.00";
+}
+
+function removeActiveClass() {
+  tipButtons.forEach((button) => {
+    button.classList.remove("active");
+  });
 }
