@@ -35,14 +35,24 @@ body {
   margin: 10px;
   padding: 20px;
   gap: 20px;
-  border: 2px solid red;
+
+  @media screen and (min-width: 700px) {
+    width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+  }
 }
 .bill-tip-people-container {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+
+  @media screen and (min-width: 700px) {
+    width: 350px;
+  }
 }
 
 .title-icon-input-container {
@@ -96,6 +106,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 10px;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: auto;
+    gap: 10px;
+  }
 }
 
 button {
@@ -112,6 +130,7 @@ input {
   background-color: var(--LightGrayishCyan);
   color: var(--veryDarkGrayishCyan);
 }
+
 .input,
 .button {
   border-radius: 5px;
@@ -122,6 +141,10 @@ input {
   text-align: center;
   padding: 0px;
   border-style: none;
+
+  @media screen and (min-width: 700px) {
+    width: 110px;
+  }
 }
 
 .summary-container {
@@ -133,7 +156,10 @@ input {
   background-color: var(--VeryDarkCyan);
   border-radius: 20px;
   gap: 20px;
-  border: 2px solid yellow;
+
+  @media screen and (min-width: 700px) {
+    width: 240px;
+  }
 }
 
 .summary-text {
@@ -184,38 +210,15 @@ p {
   margin-top: 20px;
 }
 
-/* when using @media the class being used on will inherit the attributes assigned in the class */
-/* notes to myself
-the main container contains 2 children
-.bill-tip-people-container
-.summary-container */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-@media (min-width: 376px) {
-  .main-container {
-    width: 680px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-  }
-
-  .tip-percentages {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: auto;
-    gap: 10px;
-  }
-
-  .summary-container {
-    width: 240px; 
-  }
-
-  .bill-tip-people-container {
-    width: 350px;
-  }
-  .button,
-  .input  {
-    width: 110px;
-  }
+.active {
+  background-color: var(--StrongCyan);
+  color: var(--veryDarkGrayishCyan);
 }

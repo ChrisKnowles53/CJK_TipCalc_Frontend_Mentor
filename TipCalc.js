@@ -16,7 +16,7 @@ tipButtons.forEach((button) => {
   button.addEventListener("click", () => {
     calculateTipPerPerson(button.textContent);
     removeActiveClass();
-    nutton.classList.add("active");
+    button.classList.add("active");
   });
 });
 
@@ -29,15 +29,27 @@ customTipInput.addEventListener("input", () => {
 function calculateTotalPerPerson() {
   const amount = amountInput.value;
   const numberOfPeople = numberOfPeopleInput.value;
+
   const totalPerPerson = (amount / numberOfPeople).toFixed(2);
 
   // Update the text of the total per person element
   totalPerPersonElement.textContent = totalPerPerson;
+
+  // Recalculate and update the tip amount and checks for valid tip input to avoid NaN
+  const activeTipButton = document.querySelector(".button.active");
+  if (activeTipButton) {
+    calculateTipPerPerson(activeTipButton.textContent);
+  } else if (customTipInput.value !== "") {
+    calculateTipPerPerson(customTipInput.value);
+  } else {
+    tipPersonElement.textContent = "0.00";
+  }
 }
 
 function calculateTipPerPerson(tipButtonValue) {
   const amount = amountInput.value;
   const numberOfPeople = numberOfPeopleInput.value;
+
   // parseFloat to concert from 5% to 0.05
   let tipPercentage = parseFloat(tipButtonValue) / 100;
 
