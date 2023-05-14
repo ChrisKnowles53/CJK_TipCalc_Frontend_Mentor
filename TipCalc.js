@@ -30,19 +30,32 @@ function calculateTotalPerPerson() {
   const amount = amountInput.value;
   const numberOfPeople = numberOfPeopleInput.value;
 
-  const totalPerPerson = (amount / numberOfPeople).toFixed(2);
+  if (numberOfPeople !== "0") {
+    const totalPerPerson = (amount / numberOfPeople).toFixed(2);
 
-  // Update the text of the total per person element
-  totalPerPersonElement.textContent = totalPerPerson;
+    // Update the text of the total per person element
+    totalPerPersonElement.textContent = totalPerPerson;
 
-  // Recalculate and update the tip amount and checks for valid tip input to avoid NaN
-  const activeTipButton = document.querySelector(".button.active");
-  if (activeTipButton) {
-    calculateTipPerPerson(activeTipButton.textContent);
-  } else if (customTipInput.value !== "") {
-    calculateTipPerPerson(customTipInput.value);
+    // Recalculate and update the tip amount and checks for valid tip input to avoid NaN
+    const activeTipButton = document.querySelector(".button.active");
+    if (activeTipButton) {
+      calculateTipPerPerson(activeTipButton.textContent);
+    } else if (customTipInput.value !== "") {
+      calculateTipPerPerson(customTipInput.value);
+    } else {
+      tipPersonElement.textContent = "0.00";
+    }
   } else {
-    tipPersonElement.textContent = "0.00";
+    totalPerPersonElement.textContent = "";
+    tipPersonElement.textContent = "";
+
+    // Display error message
+    const errorElement = document.createElement("p");
+    errorElement.classList.add("error-message");
+    errorElement.textContent = "Number of people cannot be empty";
+
+    const summaryContainer = document.querySelector(".summary-container");
+    summaryContainer.appendChild(errorElement);
   }
 }
 

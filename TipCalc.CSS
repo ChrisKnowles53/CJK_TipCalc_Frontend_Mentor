@@ -222,3 +222,9 @@ p {
   background-color: var(--StrongCyan);
   color: var(--veryDarkGrayishCyan);
 }
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
