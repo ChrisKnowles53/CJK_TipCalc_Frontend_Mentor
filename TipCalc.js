@@ -30,7 +30,9 @@ function calculateTotalPerPerson() {
   const amount = amountInput.value;
   const numberOfPeople = numberOfPeopleInput.value;
 
-  if (numberOfPeople !== "0") {
+  const errorElement = document.querySelector(".error-message");
+
+  if (numberOfPeople !== "") {
     const totalPerPerson = (amount / numberOfPeople).toFixed(2);
 
     // Update the text of the total per person element
@@ -45,17 +47,24 @@ function calculateTotalPerPerson() {
     } else {
       tipPersonElement.textContent = "0.00";
     }
+    errorElement.style.display = "none";
   } else {
     totalPerPersonElement.textContent = "";
     tipPersonElement.textContent = "";
 
     // Display error message
-    const errorElement = document.createElement("p");
-    errorElement.classList.add("error-message");
-    errorElement.textContent = "Number of people cannot be empty";
+    if (!errorElement) {
+      const errorElement = document.createElement("p");
+      errorElement.classList.add("error-message");
+      errorElement.textContent = "Number of people cannot be empty";
 
-    const summaryContainer = document.querySelector(".summary-container");
-    summaryContainer.appendChild(errorElement);
+      const numberOfPeopleContainer = document.querySelector(
+        ".title-icon-input-container2"
+      );
+      numberOfPeopleContainer.appendChild(errorElement);
+    } else {
+      errorElement.style.display = "block";
+    }
   }
 }
 

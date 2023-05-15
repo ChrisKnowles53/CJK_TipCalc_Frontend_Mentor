@@ -60,7 +60,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  /* align-content: space-around; */
+}
+
+.title-icon-input-container2 {
+  background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .icon-input {
