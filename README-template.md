@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-⏰- Solution URL: [Add solution URL here](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
+⏰- Solution URL: [My GitHub repo is here](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
 ⏰- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
