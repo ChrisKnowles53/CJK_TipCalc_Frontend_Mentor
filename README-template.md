@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My GitHub repo is here](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
+- Solution URL: [github.com/ChrisKnowles53](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
 ⏰ make it live on GitHub and put link here- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -50,19 +50,19 @@ Users should be able to:
 - native javascript
 - Mobile-first workflow
 
-⏰ Change this words to be more concise and work now i hae put headings
-<u>Planning</u>
-    The first thing I did was look at the desired mobile view and put boxes around the items I thought needed to be grouped together.  I then compared this to the desltop version to make sure the     boxes I had created were transferable to the desktop design.
+⏰ Change these words to be more concise and work now I have put headings
+#### Planning
+  The first thing I did was look at the desired mobile view and put boxes around the items I thought needed to be grouped together.  I then compared this to the desltop version to make sure the boxes I had created were transferable to the desktop design.
 ⏰ add a screen shot of planning activities
-<u>HTML</u>
-    I then coded the HTML file so it contained all the necesary text and images.  I endeavoured to create all the neccessary <div> with class names to enable me to style the page accordingly.  I     had to revist this during the styling to add extra <div> and to change class names where I realised I could re-use a class to avoid duplicate styling.
-<u>CSS</u>
-    I then started to created the CSS styling using a live sever of the page so I could see the changes.  I also used border boxes around the containers so I could see exactly what elements were     in the containers.  I  found this first part of the styling tricky as I got to grips with flexbox and how it interacted with the elements, due to this I took a break from styling and wrote       the javascript file.
-    The main focus was to get the mobile version completed which I took some advice from a mentor to get it working properly.  I had used margin and padding to position elements in places where I didnt need to if I used Flexbox correctly.
-<u>Javascript</u>
-    The javascript was tackled in a plan it first and build the code in managable sections that were easily manually tested.  Once I had the basic functionality I then started to add the event       listeners so that when the inputs were changed the calculations updated automatically.  This made me realise that the end user could have issues if they didnt enter the correct infomration.       To give the end user the best experience I limited the inputs to numbers and added an error message that pops up if the user deletes the number of people.  After this I went back to fnish t       he styling.
- <u>Desktop Version</u>
-      I then tackled the desktop version where I used the @media query to change the layout, I did this intially by havnig an @media query at the end of my  CSS.  After discussing this and taking onboard some advice I refactored the CSS code so the @media query is in each CSS element so you dont have to scroll up and down to see what is changing in the class and media query.
+#### HTML
+  I then coded the HTML file so it contained all the necesary text and images.  I endeavoured to create all the neccessary <div> with class names to enable me to style the page accordingly.  I     had to revist this during the styling to add extra <div> and to change class names where I realised I could re-use a class to avoid duplicate styling.
+#### CSS
+  I then started to created the CSS styling using a live sever of the page so I could see the changes.  I also used border boxes around the containers so I could see exactly what elements were     in the containers.  I found this first part of the styling tricky as I got to grips with flexbox and how it interacted with the elements, due to this I took a break from styling and wrote         the javascript file.
+  The main focus was to get the mobile version completed which I took some advice from a mentor to get it working properly.  I had used margin and padding to position elements in places where I     didnt need to if I used Flexbox correctly.
+#### Javascript
+  The javascript was tackled in a plan it first and build the code in managable sections that were easily manually tested.  Once I had the basic functionality I then started to add the event       listeners so that when the inputs were changed the calculations updated automatically.  This made me realise that the end user could have issues if they didnt enter the correct infomration.       To give the end user the best experience I limited the inputs to numbers and added an error message that pops up if the user deletes the number of people.  After this I went back to fnish t       he styling.
+#### Desktop Version</u>
+   I then tackled the desktop version where I used the @media query to change the layout, I did this intially by havnig an @media query at the end of my  CSS.  After discussing this and taking onboard some advice I refactored the CSS code so the @media query is in each CSS element so you dont have to scroll up and down to see what is changing in the class and media query.
 
 ### What I learned
 ⏰
