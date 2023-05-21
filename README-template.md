@@ -6,7 +6,7 @@ This is my solution to the [Tip calculator app challenge on Frontend Mentor](htt
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [My Solution](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -16,7 +16,6 @@ This is my solution to the [Tip calculator app challenge on Frontend Mentor](htt
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### <u>The challenge</u>
@@ -25,29 +24,27 @@ Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person  
+- Calculate the correct tip and total cost of the bill per person
 
 These are the images of the mobile and desktop versions I had to recreate
 
-| Mobile Design | Desktop Design |
-|--------------|---------------|
+| Mobile Design                               | Desktop Design                                          |
+| ------------------------------------------- | ------------------------------------------------------- |
 | ![Mobile Image](./design/mobile-design.JPG) | ![Desktop Image](./design/desktop-design-completed.JPG) |
 
 ### <u>Screenshot</u>
 
-The first image is a screenshot of the mobile version of the app and the second is the desktop version.
+These are images of my final solution
 
-
-| Mobile Image | Desktop Image |
-|--------------|---------------|
+| Mobile Image                                | Desktop Image                                 |
+| ------------------------------------------- | --------------------------------------------- |
 | ![Mobile Image](./images/tipCalcMobile.JPG) | ![Desktop Image](./images/tipCalcDesktop.JPG) |
-
-
 
 ### <u>Links</u>
 
 - Solution URL: [github.com/ChrisKnowles53](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
-  ⏰ make it live on GitHub and put link here- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+  ⏰ make it live on GitHub and put link here - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -76,6 +73,7 @@ I then started to created the CSS styling using a live sever of the page so I co
 The main focus was to get the mobile version completed which I took some advice from a mentor to get it working properly. I had used margin and padding to position elements in places where I didn't need to if I used Flexbox correctly.
 
 #### <u>Javascript</u>
+
 The javascript was tackled in a plan it first and build the code in manageable sections that were easily manually tested. Once I had the basic functionality I then started to add the event listeners so that when the inputs were changed the calculations updated automatically. This made me realise that the end user could have issues if they didn't enter the correct information. To give the end user the best experience I limited the inputs to numbers and added an error message that pops up if the user deletes the number of people. After this I went back to finish the styling.
 
 #### <u>Desktop Version</u>
@@ -86,9 +84,8 @@ I then tackled the desktop version where I used the @media query to change the l
 
 ⏰⏰ - add more detail here
 Flexbox - how to set up the html and css to use flexbox to position elements on the page. I also learnt how to use the flexbox to position elements in the middle of the page.
-@media Queries - I learnt how to make these function and the importance of setting up the flexbox correctly in the first place so i can adjust using the layout by switching flex direction.  i learn that placing the media query in the same class as the element you are changing makes reading the code easier.
-Vanilla Javascript is powerful and I don't want to loose the skill of being able to code this way.  REACT.js and vanilla js have there places to be used and i want to be able to use both.
-
+@media Queries - I learnt how to make these function and the importance of setting up the flexbox correctly in the first place so i can adjust using the layout by switching flex direction. i learn that placing the media query in the same class as the element you are changing makes reading the code easier.
+Vanilla Javascript is powerful and I don't want to loose the skill of being able to code this way. REACT.js and vanilla js have there places to be used and i want to be able to use both.
 
 To see how you can add code snippets, see below:
 
@@ -109,7 +106,6 @@ const proudOfThisFunc = () => {
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 ### Continued development
 
