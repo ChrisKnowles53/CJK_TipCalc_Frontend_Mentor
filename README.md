@@ -42,7 +42,7 @@ These are images of my final solution
 
 - Solution URL: [github.com/ChrisKnowles53](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
 
-  ⏰ make it live on GitHub and put link here - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Try the app by clicking this link](https://chrisknowles53.github.io/CJK_TipCalc_Frontend_Mentor/)
 
 ## My process
 
