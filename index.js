@@ -52,7 +52,7 @@ function calculateTotalPerPerson() {
     totalPerPersonElement.textContent = "";
     tipPersonElement.textContent = "";
 
-    // Display error message
+   
     if (!errorElement) {
       const errorElement = document.createElement("p");
       errorElement.classList.add("error-message");
