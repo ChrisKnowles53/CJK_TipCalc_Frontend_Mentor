@@ -1,93 +1,136 @@
-# Frontend Mentor - Tip calculator app
+# Frontend Mentor - Tip calculator app solution
 
-![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
+This is my solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). <br> I took this challenge on to push myself to learn the frontend skills required to make an app look as good as I could make them functionally work.<br>The second part of challenging myself was to write the project in native javascript rather than a REACT.js project. I did this because I felt like I was forgetting some of the basics I had been taught earlier in my course.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [My Solution](#my-solution)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### <u>The challenge</u>
 
-## The challenge
-
-Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+These are the images of the mobile and desktop versions I had to recreate
 
-## Where to find everything
+| Mobile Design                               | Desktop Design                                          |
+| ------------------------------------------- | ------------------------------------------------------- |
+| ![Mobile Image](./design/mobile-design.JPG) | ![Desktop Image](./design/desktop-design-completed.JPG) |
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### <u>My Solution</u>
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+These are images of my final solution
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+| Mobile Image                                | Desktop Image                                 |
+| ------------------------------------------- | --------------------------------------------- |
+| ![Mobile Image](./images/tipCalcMobile.JPG) | ![Desktop Image](./images/tipCalcDesktop.JPG) |
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### <u>Links</u>
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [github.com/ChrisKnowles53](https://github.com/ChrisKnowles53/CJK_TipCalc_Frontend_Mentor)
 
-## Building your project
+  ⏰ make it live on GitHub and put link here - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## My process
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### <u>Built with</u>
 
-## Deploying your project
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- native javascript
+- Mobile-first workflow
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### <u>Planning</u>
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+|                     |                         |
+| --------------------| ----------------------- |
+| ![Desktop Image](./images/planning.JPG) | The first thing I did was look at the desired mobile view and put boxes around the items I thought needed to be grouped together. I then compared this to the desktop version to make sure the boxes I had created were transferable to the desktop design. For the desktop version the top brown box would have to move down and to the left. by visualising this I could then think about where to specific containers in the HTML. |
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### <u>HTML</u>
 
-## Create a custom `README.md`
+I then coded the HTML file so it contained all the necessary text and images. I endeavoured to create all the necessary divs and containers with class names to enable me to style the page accordingly. I had to revisit this during the styling to add extra divs and to change class names where I realised I could re-use a class to avoid duplicate styling.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### <u>CSS</u>
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+I then started to created the CSS styling using a live sever of the page so I could see the changes. I also used border boxes around the containers so I could see exactly what elements were in the containers. I found this first part of the styling tricky as I got to grips with flexbox and how it interacted with the elements, due to this I took a break from styling and wrote the javascript file.
+The main focus was to get the mobile version completed which I took some advice from a mentor to get it working properly. I had used margin and padding to position elements in places where I didn't need to if I used Flexbox correctly.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### <u>Javascript</u>
 
-## Submitting your solution
+The javascript was tackled in a plan it first and build the code in manageable sections that were easily manually tested. Once I had the basic functionality I then started to add the event listeners so that when the inputs were changed the calculations updated automatically. This made me realise that the end user could have issues if they didn't enter the correct information. To give the end user the best experience I limited the inputs to numbers and added an error message that pops up if the user deletes the number of people. After this I went back to finish the styling.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+### <u>Desktop Version</u>
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+I then tackled the desktop version where I used the @media query to change the layout, I did this initially by having an @media query at the end of my CSS. After discussing this and taking onboard some advice I refactored the CSS code so the @media query is in each CSS element so you don't have to scroll up and down to see what is changing in the class and media query.
 
-## Sharing your solution
+## What I learned
 
-There are multiple places you can share your solution:
+Planning - with the knowledge gained completing this exercise i will be abel to plan the next project better.  I now have a much better understanding how to layout the containers in the beggining so that when I style it they are there ready for use. 
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+Flexbox - how to set up the html and css to use flexbox to position elements on the page. I also learnt that fi you set up the containers correctly the children inherit the parents properties and this reduces the number of lines of code in your CSS.  This was also essential when switching between mobile and desktop.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+@media Queries - I learnt how to make these function and the importance of setting up the flexbox correctly in the first place so I can adjust using the layout by switching flex direction.  At the end i refactored the code so placing the media query in the same class as the element you are changing.  This made reading the code a lot easier as you weren't scrolling up and down to see what your media query is changing it to and from.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+Vanilla Javascript is powerful and I don't want to loose the skill of being able to code this way. REACT.js and vanilla js have there places to be used and I want to be able to use both.
 
-## Got feedback for us?
+An example of how I included the media query in the class:
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+```css
+.bill-tip-people-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+  @media screen and (min-width: 700px) {
+    width: 350px;
+  }
+}
+```
 
-**Have fun building!** 🚀
+This is the method I used for adding an error message if the user deleted the number of people:
+
+```js
+} else {
+    totalPerPersonElement.textContent = "";
+    tipPersonElement.textContent = "";
+
+    if (!errorElement) {
+      const errorElement = document.createElement("p");
+      errorElement.classList.add("error-message");
+      errorElement.textContent = "Number of people cannot be empty";
+
+      const numberOfPeopleContainer = document.querySelector(
+        ".title-icon-input-container2"
+      );
+      numberOfPeopleContainer.appendChild(errorElement);
+    } else {
+      errorElement.style.display = "block";
+    }
+```
+
+## Continued development
+
+I will continue with Frontend Mentor challenges and pick one now that I think uses both grid and flexbox so I can be confident that I can use them both together.
+
+I will also continue to use vanilla javascript to keep my skills up to date and to be able to use it when I need to.
+
+## Useful resources
+
+- [Beginners guide to @media queries ](https://css-tricks.com/a-complete-guide-to-css-media-queries/) - This helped me to understand media queries and the information is well laid out so was easy to digest.
+- [How to use Markdown](https://www.markdowntutorial.com/) - This was essential to create this ReadMe as I had not used markdown up until now.
+
