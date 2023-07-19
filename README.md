@@ -28,7 +28,7 @@ These are the images of the mobile and desktop versions I had to recreate
 
 | Mobile Design                               | Desktop Design                                          |
 | ------------------------------------------- | ------------------------------------------------------- |
-| ![Mobile Image](./design/mobile-design.JPG) | ![Desktop Image](./design/desktop-design-completed.JPG) |
+| ![Mobile Image](./design/mobile-design.jpg) | ![Desktop Image](./design/desktop-design-completed.jpg) |
 
 ### <u>My Solution</u>
 
@@ -56,8 +56,8 @@ These are images of my final solution
 
 ### <u>Planning</u>
 
-|                     |                         |
-| --------------------| ----------------------- |
+|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Desktop Image](./images/planning.JPG) | The first thing I did was look at the desired mobile view and put boxes around the items I thought needed to be grouped together. I then compared this to the desktop version to make sure the boxes I had created were transferable to the desktop design. For the desktop version the top brown box would have to move down and to the left. by visualising this I could then think about where to specific containers in the HTML. |
 
 ### <u>HTML</u>
@@ -79,11 +79,11 @@ I then tackled the desktop version where I used the @media query to change the l
 
 ## What I learned
 
-Planning - with the knowledge gained completing this exercise i will be abel to plan the next project better.  I now have a much better understanding how to layout the containers in the beggining so that when I style it they are there ready for use. 
+Planning - with the knowledge gained completing this exercise i will be abel to plan the next project better. I now have a much better understanding how to layout the containers in the beggining so that when I style it they are there ready for use.
 
-Flexbox - how to set up the html and css to use flexbox to position elements on the page. I also learnt that fi you set up the containers correctly the children inherit the parents properties and this reduces the number of lines of code in your CSS.  This was also essential when switching between mobile and desktop.
+Flexbox - how to set up the html and css to use flexbox to position elements on the page. I also learnt that fi you set up the containers correctly the children inherit the parents properties and this reduces the number of lines of code in your CSS. This was also essential when switching between mobile and desktop.
 
-@media Queries - I learnt how to make these function and the importance of setting up the flexbox correctly in the first place so I can adjust using the layout by switching flex direction.  At the end i refactored the code so placing the media query in the same class as the element you are changing.  This made reading the code a lot easier as you weren't scrolling up and down to see what your media query is changing it to and from.
+@media Queries - I learnt how to make these function and the importance of setting up the flexbox correctly in the first place so I can adjust using the layout by switching flex direction. At the end i refactored the code so placing the media query in the same class as the element you are changing. This made reading the code a lot easier as you weren't scrolling up and down to see what your media query is changing it to and from.
 
 Vanilla Javascript is powerful and I don't want to loose the skill of being able to code this way. REACT.js and vanilla js have there places to be used and I want to be able to use both.
 
@@ -133,4 +133,3 @@ I will also continue to use vanilla javascript to keep my skills up to date and 
 
 - [Beginners guide to @media queries ](https://css-tricks.com/a-complete-guide-to-css-media-queries/) - This helped me to understand media queries and the information is well laid out so was easy to digest.
 - [How to use Markdown](https://www.markdowntutorial.com/) - This was essential to create this ReadMe as I had not used markdown up until now.
-
